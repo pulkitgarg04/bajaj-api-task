@@ -71,7 +71,7 @@ const handleBfhl = async (req, res) => {
                     });
                 }
 
-                data = [calculateHCF(value)];
+                data = calculateHCF(value);
                 break;
 
             case 'lcm':
@@ -83,7 +83,7 @@ const handleBfhl = async (req, res) => {
                     });
                 }
 
-                data = [calculateLCM(value)];
+                data = calculateLCM(value);
                 break;
 
             case 'AI':
@@ -95,7 +95,7 @@ const handleBfhl = async (req, res) => {
                     });
                 }
 
-                data = [await getAIResponse(value)];
+                data = await getAIResponse(value);
                 break;
         }
 
